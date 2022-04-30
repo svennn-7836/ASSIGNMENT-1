@@ -34,25 +34,24 @@
             // 
             // button1
             // 
-            this.button1.AllowDrop = true;
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(87, 125);
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(133, 85);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(247, 29);
+            this.button1.Size = new System.Drawing.Size(171, 109);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Click here to show Full Name";
+            this.button1.Text = "Click to show Full Name";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MessageBoxCreation
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(446, 293);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -60,7 +59,6 @@
             this.Text = "ASSIGNMENT#1 - \"MESSAGEBOX\".exe";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
